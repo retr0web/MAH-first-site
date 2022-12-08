@@ -1,0 +1,147 @@
+:root {
+    --bg-main: #411530;
+    --bg-accent: #D1512D;
+    --bg-beige: #F5C7A9;
+    --bg-grey: #F5E8E4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+   min-height: 100%;
+   width: 100%;
+}
+
+.bg-main {
+    background-color: var(--bg-main);
+}
+
+.bg-accent {
+    background-color: var(--bg-accent);
+}
+
+.bg-beige {
+    background-color: var(--bg-beige);
+}
+
+.bg-grey {
+    background-color: var(--bg-grey);
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    background-color: var(--bg-accent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    max-height: 100%;
+    padding: 15px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    transition: 0.7s;
+}
+
+header nav ul li a:hover {
+    background-color: var(--bg-main);
+}
+
+.home {
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.home h1 {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+
+.home p {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    max-width: 60ch;
+}
+
+.hits {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hits h1 {
+    color: var(--bg-main);
+    font-size: 36px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.cards {
+    width: 90%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card img {
+    height: 50%;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card h1 {
+    font-size: 24px;
+    color: var(--bg-main);
+    text-align: center;
+}
+
+.card p {
+    font-size: 18px;
+    color: var(--bg-main);
+    text-align: center;
+}
+
